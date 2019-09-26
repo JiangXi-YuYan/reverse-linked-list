@@ -14,8 +14,7 @@ public class ReverseLinkedListTest {
         node1.next = node2;
         ReverseLinkedList.Node node3 = new ReverseLinkedList.Node(3);
         node2.next = node3;
-        ReverseLinkedList.Node node4 = new ReverseLinkedList.Node(4);
-        node3.next = node4;
+        node3.next = new ReverseLinkedList.Node(4);
 
         Assertions.assertEquals(
                 Arrays.asList(4, 3, 2, 1), collect(ReverseLinkedList.reverse(node1)));
